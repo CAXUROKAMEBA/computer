@@ -1,9 +1,26 @@
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+/* Загальний стиль */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Контент повинен займати весь доступний простір */
+main {
+    flex-grow: 1;
+    padding: 20px;
 }
 
 header {
@@ -42,10 +59,6 @@ nav ul li a:hover {
 }
 
 /* Основний контент */
-main {
-    padding: 20px;
-}
-
 section {
     padding: 20px;
     margin: 20px auto;
@@ -79,15 +92,14 @@ ul li strong {
     color: #003366;
 }
 
-/* Footer */
+/* Sticky Footer */
 footer {
     background-color: #003366;
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +125,7 @@ footer p {
     margin: 10px 0 0 0;
 }
 
-
+/* Hover та фони */
 section:hover {
     background-color: #e6f2ff;
     border-color: #0059b3;
