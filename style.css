@@ -1,0 +1,120 @@
+/* Загальний стиль */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #0059b3;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Основний контент */
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+h2 {
+    color: #003366;
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+ul li strong {
+    color: #003366;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contact-info {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #00aced;
+}
+
+footer p {
+    margin: 10px 0 0 0;
+}
+
+/* Hover та фони */
+section:hover {
+    background-color: #e6f2ff;
+    border-color: #0059b3;
+}
