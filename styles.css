@@ -123,3 +123,26 @@ section:hover {
     background-color: #e6f2ff;
     border-color: #0059b3;
 }
+
+/* Стилі для зображень */
+.intro-image, .first-gen-image, .machine-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro-image:hover, .first-gen-image:hover, .machine-image:hover {
+    transform: scale(1.05);
+}
+
+.machine-image {
+
+    height: 500px;
+    width: 600px;
+
+}
